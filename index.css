@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+  
+    
+}
+.buttonContainer{
+    margin-top: 3%;
+}
+.ColorChange{
+    background-color: rgb(212, 255, 0);
+    height:50px;
+    font-weight: bold;
+  
+}
+.randomColor{
+    height: 40px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: blueviolet;
+    color: greenyellow;
+    border-radius: 5px;
+
+}
+.enterColor{
+    margin-right: 20px;
+      height: 30px;
+          padding: 10px;
+      border-radius: 5px;
+}
+.applyColor{
+    height: 40px;
+    padding: 10px;
+    background-color: blueviolet;
+    color: greenyellow;
+    border-radius: 10px;
+
+}
+.currentColor{
+   margin-top: 3%;
+}
+button:active{
+    scale: 0.9;
+}
+input:focus{
+    outline-color: blue;
+}
+
