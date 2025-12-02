@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>FAQ</h1>
+
+        <!-- FAQ 1 -->
+        <div class="question">
+            <div class="question-title">
+                <h2>1. What is JavaScript?</h2>
+                <button class="question-btn">
+                    <i class="fas fa-angle-down"></i>
+                </button>
+            </div>
+            <p class="answer">
+                JavaScript is a programming language used to make web pages interactive.
+            </p>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="question">
+            <div class="question-title">
+                <h2>2. What technologies are used in Frontend?</h2>
+                <button class="question-btn">
+                    <i class="fas fa-angle-down"></i>
+                </button>
+            </div>
+            <p class="answer">
+                Frontend development uses HTML, CSS, JavaScript, and frameworks like React, Angular, and Vue.
+            </p>
+        </div>
+            <!-- FAQ 3 -->
+         <div class="question">
+            <div class="question-title">
+                <h2>3. What is the difference between inline, internal, and external CSS?</h2>
+                <button class="question-btn">
+                    <i class="fas fa-angle-down"></i>
+                </button>
+            </div>
+            <p class="answer">
+                   Inline CSS- added directly to an element’s style attribute.<br>
+                   Internal CSS- written inside a  &lt;style &gt; tag in the <br>
+                   External CSS- written in a separate .css file and linked to HTML.
+            </p>
+           
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="question">
+            <div class="question-title">
+                <h2>4. What is an API?</h2>
+                <button class="question-btn">
+                    <i class="fas fa-angle-down"></i>
+                </button>
+            </div>
+            <p class="answer">
+                API (Application Programming Interface) allows communication between two software systems.
+            </p>
+        </div>
+           <!-- FAQ-5 -->
+         <div class="question">
+            <div class="question-title">
+                <h2>5. What is the history of JavaScript??</h2>
+                <button class="question-btn">
+                    <i class="fas fa-angle-down"></i>
+                </button>
+            </div>
+            <p class="answer">
+                  JavaScript was created in 1995 by Brendan Eich while he was working at Netscape. Initially, it was called Mocha, then renamed to LiveScript, and finally JavaScript. It was designed to make web pages interactive and has since become one of the most popular programming languages for frontend and backend development.
+            </p>
+           
+        </div>
+
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll(".question");
+
+        questions.forEach(question => {
+            const btn = question.querySelector(".question-btn");
+
+            btn.addEventListener("click", () => {
+                question.classList.toggle("show-text");
+            });
+        });
+    </script>
+
+</body>
+</html>
+
