@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomb Blast</title>
+    <style>
+        .parent{
+            background: linear-gradient(orange,yellow);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #bomb{
+            /* height:400px; */
+            width:300px;
+         
+        }
+        #title{
+            text-align: center;
+        }
+        #timer{
+            font-size: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent" >
+        <div>
+            <p id="title">Bomb Blast</p>
+            <img id="bomb" src="https://www.shutterstock.com/image-vector/realistic-bomb-burning-fuse-emitting-600nw-2474308221.jpg">
+            <p id="timer" >Timer : 10</p>
+
+        </div>
+    </div>
+    <script>
+        let timer = document.getElementById("timer")
+        let image_elem =document.getElementById("bomb")
+        let title_elem =document.getElementById("title")
+        title_elem.style.fontSize = "2rem"
+        let count = 10
+        let interval_timer =setInterval(function(){
+            count--
+            timer.innerText = "Timer :"+" "+ count
+            if (count <=3 ){
+                timer.style.color="red"
+                title_elem.style.color="red"
+            }
+            if (count ==0){
+                clearInterval( interval_timer)
+                image_elem.src="https://t3.ftcdn.net/jpg/00/42/53/70/360_F_42537001_JMwYOwBmDJ4pXlkMNRUZl8LkZ7TYoa9x.jpg"
+                // image_elem.style.height=""
+                 image_elem.style.width="300px"
+                 image_elem.style.height ="300px"
+            }
+
+        },1000)
+         
+    </script>
+    
+</body>
+</html>
